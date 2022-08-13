@@ -1,0 +1,547 @@
+@font-face {
+    font-family: 'opensans';
+    src: url(./шрифты/OpenSans-Medium.ttf);
+}
+@font-face {
+    font-family: 'opensans-bold';
+    src: url(./шрифты/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: 'opensans-light';
+    src: url(./шрифты/OpenSans-Light.ttf);
+}
+@font-face {
+    font-family: 'opensans-semibold';
+    src: url(./шрифты/OpenSans-SemiBold.ttf);
+}
+:root {
+    font-family: 'opensans';
+}
+body {
+    margin: 0px;
+    background-color: white;
+}
+header {
+    height: 20%;
+    min-height: 200px;
+}
+header section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+header section:nth-child(1) {
+    background-color: rgba(76, 177, 202, 1);
+    color: white;
+    min-height: 45px;
+    font-size: 13px;
+}
+header section:nth-child(2) {
+    color: #656565;
+    min-height: 90px;
+    font-family: 'opensans-bold';
+    font-size: 14px;
+}
+header section:nth-child(3) {
+    background: url(./картинки/Безымянный.png) no-repeat;
+    background-size: 100%;
+    min-height: 500px;
+    align-items: center;
+}
+header section div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+header section:nth-child(2) div div {
+    padding: 4%;
+}
+#logo {
+    font-size: 36px;
+}
+.fishki2 {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    color: #CDCDCD;
+    background-color: white;
+    align-items: center;
+}
+header section:nth-child(3) div:nth-child(2) {
+    padding-left: 47px; 
+    flex-grow: 100;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 30px;
+}
+.fishki {
+    border-radius: 50%;
+    background-color: rgba(125, 177, 34, 1);
+    min-width: 35px;
+    min-height: 35px;
+    padding: 0%;
+    margin: 4%;
+}
+.fishki2 div {
+    height: 30%;
+    width: 30%;
+    border-top: #CDCDCD solid 3px;
+    border-right: #CDCDCD solid 3px;
+    transform: rotate(-135deg);
+    margin-left: 15%;
+}
+#vpered {
+    transform: rotate(45deg);
+    margin-left: 0%;
+    margin-right: 15%;
+}
+#cart {
+    vertical-align: middle;
+}
+img {
+    height: 17px;
+    width: 20px;
+    margin: auto;
+}
+select {
+    border: none;
+    background-color: inherit;
+    color: inherit;
+    align-items: flex-end;
+}
+label {
+    color: #BEF2FF;
+}
+option {
+    color: black;
+}
+input[type="submit"] {
+    background: url(./картинки/\ \(1\).png) no-repeat;
+    min-height: 32px;
+    min-width: 32px;
+    border-left: none;
+    border-right: 2px solid rgba(198, 198, 198, 1);
+    border-top: 2px solid rgba(198, 198, 198, 1);
+    border-bottom: 2px solid rgba(198, 198, 198, 1);
+}
+input[type="search"] {
+    border-right: none;
+    min-height: 32px;
+    border-top: 2px solid rgba(198, 198, 198, 1);
+    border-bottom: 2px solid rgba(198, 198, 198, 1);
+    border-left: 2px solid rgba(198, 198, 198, 1);
+}
+header section:nth-child(3) p {
+    margin: 1px;
+    background-color: #656565;
+    color: white;
+    padding: 0.5%;
+}
+header section:nth-child(3) p:first-child {
+    font-family: 'opensans-light';
+}
+header section:nth-child(3) p:last-child {
+    font-family: 'opensans-bold';
+}
+main {
+    padding: 7%;
+}
+main section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 10fr 10fr 10fr 1fr 10fr 1fr 10fr;
+    grid-gap: 10px;
+    grid-auto-flow: row;
+    grid-column: 1/4;
+}
+main section div:nth-child(1) {
+    grid-column: 1/4;
+    color: #635F57;
+    font-size: 24px;
+}
+main section div:nth-child(2) {
+    grid-column: 4;
+    border: rgba(76, 177, 202, 1) solid 2px;
+    height: 0px;
+}
+main section div:nth-child(3) {
+    grid-column: 4;
+    grid-row: 2/4;
+}
+#aside p {
+    color: #635F57;
+    text-align: center;
+    height: 49px;
+    width: 100%;
+    margin: 0%;
+    font-size: 24px;
+}
+#banner {
+    background-image: url(./картинки/Layer\ 35.png);
+    background-repeat: no-repeat;
+    height: 441px;
+    border: none;
+    margin-bottom: 7px;
+    background-size: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+#banner span {
+    background-color: rgba(76, 177, 202, 1);
+    color: white;
+    font-size: 14px;
+    padding: 5% 10% 5% 10%;
+    margin: 20%;
+}
+#prokrutka {
+    height: 49px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 28px;
+}
+#prokrutka div {
+    background-color: rgba(125, 177, 34, 1);
+    border: none;
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    margin: 4px;
+}
+#prokrutka div:first-child {
+    background-color: rgba(76, 177, 202, 1);
+}
+#line {
+    height: 0%;
+    padding: 0%;
+    border: rgba(76, 177, 202, 1) solid 2px;
+    width: 100%;
+    margin: 0px 0px 28px 0px;
+}
+#aside p:nth-child(5) {
+    margin-bottom: 35px;
+}
+#aside p:last-of-type {
+    height: 35px;
+    font-size: 14px;
+    margin-bottom: 20%;
+}
+main section div:nth-child(4) {
+    grid-column: 4;
+    grid-row: 4/8;
+    background-color: rgba(126, 177, 35, 1);
+    color: white;
+    align-self: flex-start;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 14px;
+}
+main section div:nth-child(5) {
+    grid-column: 1/4;
+    grid-row: 5;
+    font-size: 24px;
+    color: #635F57;
+}
+main section div:nth-child(6) {
+    grid-column: 1/4;
+    grid-row: 7;
+    font-size: 24px;
+    color: #635F57;
+}
+main section div:nth-child(n+7) {
+    height: 290px;
+    width: 243px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+main section div:nth-child(n+7):hover {
+    transform: scale(1.1);
+}
+main section div:nth-child(n+7) div:first-child {
+    background-color: rgba(76, 177, 202, 1);
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 13px;
+    margin-left: 80px;
+    padding: 10px;
+    transform: rotate(45deg);
+    width: 100%; 
+    font-family: 'opensans-semibold';   
+}
+main section div:nth-child(9) div:first-child {
+    background-color: rgba(126, 177, 35, 1);
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 13px;
+    margin-right: 80px;
+    align-self: flex-end;
+    padding: 10px;
+    transform: rotate(-45deg);
+    width: 100%;  
+    font-family: 'opensans-semibold';  
+}
+main section div:nth-child(14) div:first-child {
+    background-color: rgba(126, 177, 35, 1);
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 13px;
+    margin-right: 80px;
+    align-self: flex-end;
+    padding: 10px;
+    transform: rotate(-45deg);
+    width: 100%; 
+    font-family: 'opensans-semibold';   
+}
+#ordinary {
+    background-color: rgba(125, 177, 34, 0);
+}
+main section div:nth-child(n+7) img {
+    width: 100%;
+    height: auto;
+}
+main section div:nth-child(n+7) div:nth-child(3) {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: column;
+}
+main section div:nth-child(n+7) div:nth-child(3) div {
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgba(126, 177, 35, 1);
+    grid-row: 1/3;
+    background-image: url(./картинки/korz.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+main section div:nth-child(n+7) div:nth-child(3) p:first-child {
+    color: #464148;
+    margin: 6px 0px 0px 0px;
+    white-space: nowrap;
+}
+main section div:nth-child(n+7) div:nth-child(3) p:last-of-type {
+    color: rgba(125, 177, 34, 1);
+    margin: 6px 0px 0px 0px;
+}
+main section div:nth-child(n+7) div:nth-child(3) div:hover {
+    transform: scale(1.1);
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+footer section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.9fr 1.1fr;
+    grid-template-rows: 110px 10fr 2fr;
+    grid-auto-flow: row;
+}
+footer section div {
+    background-color: #39A0B9;
+    color: white;
+}
+#dostavka {
+    grid-column: 1/3 ;
+    background-color: #4CB1CA;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 21px;
+    padding: 0px 20px 0px 20px;
+}
+#dostavka div {
+    height: 68px;
+    width: 68px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0px 20px 0px 20px;
+    background-image: url(./картинки/груз.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+#telefon {
+    grid-column: 3/5 ;
+    background-color: #4CB1CA;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 21px;
+    padding: 20px 20px 20px 0px;
+}
+#telefon div {
+    height: 68px;
+    width: 68px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 20px;
+    background-image: url(./картинки/тел.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+#facebook {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: stretch;
+}
+#facebook div {
+    margin: 50px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: flex-start;
+}
+#facebook div span:first-child {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+#facebook div span:nth-of-type(n+2) {
+    font-size: 13px;
+    margin-bottom: 6px;
+    font-family: 'opensans-light';
+}
+#facebook div img {
+    margin: 0px 0px 13px 0px;
+    height: 23px;
+    width: 47px;
+}
+#facebook div div {
+    margin: 0px 0px 20px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+#facebook div div img {
+    height: 50px;
+    width: 50px;
+    margin: 4px 0px 0px 4px;
+}
+#twitter {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1.5fr 1.5fr 2fr;
+    color: white;
+}
+#twitter div:first-child {
+    grid-column: 1/3;
+    margin-top: 50px;
+    font-size: 20px;
+    margin-left: 51px;
+}
+#twitter div:nth-child(2n+2) {
+    border-radius: 50%;
+    height: 46px;
+    width: 46px;
+    margin-left: 51px;
+    background-color: white;
+    background-image: url(./картинки/twit.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+#twitter div:nth-child(2n+3) {
+    font-size: 13px;
+    height: 70px;
+    width: 162px;
+    margin-top: 5px;
+}
+#twitter span {
+    color: #BEF2FF;
+}
+#information div{
+    margin-top: 50px;
+    font-size: 20px;
+    margin-left: 40px;
+}
+#information ul {
+    padding: 0px;
+    margin-top: 35px;
+    margin-left: 40px;
+}
+#information li {
+    list-style-type: none;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+#information li::before {
+    display: inline-block;
+    content: '';
+    height: 5px;
+    width: 5px;
+    margin-right: 10px;
+    margin-bottom: 1px;
+    transform: rotate(45deg);
+    border: white 1px solid;
+    border-bottom: none;
+    border-left: none;
+}
+#contact div:first-child {
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+#contact div:nth-child(2) {
+    font-size: 13px;
+    line-height: 22px;
+}
+#contact div:nth-child(n+3) {
+    height: 39px;
+    width: 39px;
+    background-color: white;
+    border-radius: 50%;
+    float: left;
+    margin: 32px 7px 0px 0px;
+    background-image: url(./картинки/гугол.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+#contact div:nth-child(4) {
+    background-image: url(./картинки/лн.png);
+}
+#contact div:nth-child(5) {
+    background-image: url(./картинки/вифи.png);
+}
+#contact div:nth-child(6) {
+    background-image: url(./картинки/фебе.png);
+}
+#copy {
+    background-color: rgba(11, 75, 90, 1);
+    grid-column: 1/3;
+    font-size: 13px;
+    padding-top: 35px;
+    padding-left: 120px;
+}
+#end {
+    background-color: rgba(11, 75, 90, 1);
+    grid-column: 3/5;
+    font-size: 13px;
+    padding-top: 35px;
+    padding-left: 50px;
+}
